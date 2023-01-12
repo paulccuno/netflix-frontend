@@ -1,0 +1,16 @@
+@import "src/theme/colors";
+
+.input {
+  background-color: $tertiary;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  color: $light;
+
+  &.active {
+    border-bottom: $warning 3px solid;
+  }
+}

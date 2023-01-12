@@ -1,0 +1,13 @@
+@import "src/theme/variables";
+@import "src/theme/colors";
+
+.catalog {
+  @include page;
+  min-width: 100vw;
+  background-color: darken($secondary, 5%);
+  padding: 0;
+
+  > .content {
+    padding: 20px;
+  }
+}

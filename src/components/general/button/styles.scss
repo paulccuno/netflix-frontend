@@ -1,0 +1,15 @@
+@import "src/theme/colors";
+
+.button {
+  background-color: $primary;
+  color: $light;
+  outline: none;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &[disabled], &:disabled {
+    background-color: lighten($tertiary,  30%);
+  }
+}

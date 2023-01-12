@@ -1,0 +1,32 @@
+@import "src/theme/colors";
+
+.profile-card {
+  max-width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+  border-radius: 5px;
+
+  &:hover {
+    > .cover {
+      border-color: $light;
+    }
+
+    > .name {
+      color: $light;
+    }
+  }
+
+  > .cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: transparent 4px solid;
+    border-radius: 5px;
+  }
+
+  > .name {
+    color: lighten($tertiary, 25%);
+    font-size: 1.5rem;
+  }
+}

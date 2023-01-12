@@ -1,0 +1,12 @@
+@import "src/theme/colors";
+@import "src/theme/variables";
+
+.movie {
+  @include page;
+  padding: 0;
+  width: 99vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $dark;
+}

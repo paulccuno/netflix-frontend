@@ -1,0 +1,36 @@
+@import "src/theme/colors";
+@import "src/theme/variables";
+
+.profile-selection {
+  @include page;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > .content {
+
+    > .title {
+      color: $light;
+      font-size: 3.5rem;
+    }
+
+    > .users {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    > .update {
+      outline: none;
+      border: $light 2px solid;
+      background-color: transparent;
+      color: $light;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      padding: 10px 40px;
+      cursor: pointer;
+    }
+  }
+}

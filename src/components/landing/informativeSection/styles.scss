@@ -1,0 +1,42 @@
+@import "src/theme/colors";
+
+.informative-section {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  & > .content {
+    order: 1;
+    color: $light;
+    text-align: left;
+
+    & > .title {
+      color: $light;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    & > p {
+      font-size: 1.3rem;
+    }
+  }
+
+  & > .img {
+    order: 2;
+    max-width: 400px;
+    margin-left: 20px;
+  }
+
+  &.left {
+    & > .content {
+      order: 2;
+    }
+
+    & > .img {
+      order: 1;
+      margin-right: 20px;
+    }
+  }
+}

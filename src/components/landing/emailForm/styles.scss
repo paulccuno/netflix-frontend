@@ -1,0 +1,37 @@
+@import "src/theme/colors";
+
+$input-padding: 20px 10px;
+
+.email-form {
+  & > .instructions {
+    font-weight: lighter;
+    color: $light;
+    margin-bottom: 20px;
+  }
+
+  & > .form {
+    max-width: 500px;
+    margin: auto;
+
+    & > .input {
+      padding: $input-padding;
+      width: 70%;
+      outline: none;
+      border: 1px solid $tertiary;
+
+      &:focus {
+        border-color: $blue;
+      }
+    }
+
+    & > .submit {
+      background-color: $primary;
+      width: 30%;
+      height: 100%;
+      outline: none;
+      border: none;
+      color: $light;
+      padding: $input-padding;
+    }
+  }
+}

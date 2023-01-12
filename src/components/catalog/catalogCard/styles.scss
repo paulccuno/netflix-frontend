@@ -1,0 +1,67 @@
+@import "src/theme/colors";
+
+$br-radius: 7px;
+
+.catalog-card {
+  margin: 5px;
+  transition: transform 0.3s linear;
+  border-radius: $br-radius;
+  z-index: 500;
+
+  &:hover {
+    transform: scale(1.15);
+    border-radius: $br-radius;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    max-width: 350px;
+
+    > .cover {
+      border-radius: $br-radius $br-radius 0 0;
+    }
+
+    > .details {
+      display: block;
+    }
+  }
+
+  > .cover {
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: $br-radius;
+    border-bottom-right-radius: $br-radius;
+    margin-bottom: -5px;
+  }
+
+  > .details {
+    display: none;
+    background-color: $dark;
+    padding: 10px;
+    border-bottom-left-radius: $br-radius;
+    border-bottom-right-radius: $br-radius;
+
+    > .options {
+      text-align: left;
+      padding: 5px 0;
+    }
+
+    > .vote {
+      color: $success;
+      text-align: left;
+      padding: 5px 0;
+      font-weight: bolder;
+      font-size: 0.85rem;
+    }
+
+    > .genres {
+      color: $light;
+      display: flex;
+      font-size: 0.7rem;
+      padding: 5px 0;
+
+      p {
+        white-space: pre-line;
+        margin-right: 9px;
+      }
+    }
+  }
+}

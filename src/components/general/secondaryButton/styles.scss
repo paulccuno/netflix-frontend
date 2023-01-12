@@ -1,0 +1,25 @@
+.secondary-button {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 30px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  > .icon {
+    font-size: 2.2rem;
+    margin-right: 15px;
+  }
+
+  > .text {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}

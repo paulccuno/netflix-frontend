@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "¿Qué es Netflix?",
+    "description": "Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.\n      \nTodo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!"
+  },
+  {
+    "id": 2,
+    "title": "¿Cuánto cuesta Netflix?",
+    "description": "Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $ 16.900 hasta $ 38.900 al mes. Sin costos adicionales ni contratos."
+  }
+]

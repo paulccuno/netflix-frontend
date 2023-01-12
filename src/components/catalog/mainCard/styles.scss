@@ -1,0 +1,87 @@
+@import "src/theme/colors";
+
+$br-radius: 3px;
+
+.main-card {
+  width: 18%;
+  height: 60vh;
+  margin: 0 5px;
+  border-radius: $br-radius;
+  position: relative;
+  user-select: none;
+
+  &:hover {
+    > .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+
+  > .cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $br-radius;
+  }
+
+  > .details {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 20px 10px;
+
+    > .actions {
+      text-align: left;
+      margin-bottom: 8px;
+
+      > * {
+        transform: scale(1.2);
+        margin-right: 20px;
+      }
+    }
+
+    > .title {
+      color: $light;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: left;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    }
+
+    > .informative {
+      display: flex;
+      align-items: center;
+      padding: 7px 0;
+
+      > .votes {
+        color: $success;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+      }
+
+      > .rate {
+        color: $light;
+        border: $light 1px solid;
+        padding: 0 5px;
+        margin-left: 10px;
+        font-size: 0.9rem;
+        height: 1.4rem;
+      }
+    }
+
+    > .genres {
+      text-align: left;
+      > span {
+        color: $light;
+        font-size: 1.1rem;
+        margin-right: 12px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}

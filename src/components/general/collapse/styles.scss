@@ -1,0 +1,37 @@
+@import "src/theme/colors";
+
+.collapse {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 8px;
+
+  > .header, > .description {
+    background-color: $tertiary;
+    color: $light;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  > .header {
+    margin-bottom: 2px;
+  }
+
+  > .description {
+    white-space: pre-line;
+    transition: all 0.2s linear;
+    max-height: 0;
+    overflow: hidden;
+
+    &.closed {
+      padding: 0;
+    }
+
+    &.open {
+      max-height: 1000px;
+    }
+  }
+}

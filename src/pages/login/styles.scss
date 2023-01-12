@@ -1,0 +1,27 @@
+@import "src/theme/variables";
+
+.login {
+  @include page;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/d9cb1eea-62ee-4ec1-9b90-8d98874b8867/5fc44121-8ff0-4238-be5d-59824bcda174/CO-es-20210817-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  padding: 0;
+
+  & > .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    header {
+      display: flex;
+      padding: 0 30px;
+    }
+
+    header > img {
+      max-width: 180px;
+      cursor: pointer;
+    }
+
+    > .form {
+      position: relative;
+      display: inline-block;
+      top: 10%;
+    }
+  }
+}

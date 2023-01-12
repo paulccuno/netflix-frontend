@@ -1,0 +1,9 @@
+@import "src/theme/colors";
+
+.error-message {
+  text-align: left;
+  color: $light;
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+  min-height: 0.85rem;
+}
